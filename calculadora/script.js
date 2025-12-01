@@ -24,12 +24,12 @@ botones.forEach((boton) => {
       try {
         pantalla.textContent = eval(pantalla.textContent);
       } catch (error) {
-        pantalla.textContent = "Error";
+        pantalla.textContent = "Error!";
       }
       return;
     }
 
-    if (pantalla.textContent === "0" || pantalla.textContent === "Error") {
+    if (pantalla.textContent === "0" || pantalla.textContent === "Error!") {
       pantalla.textContent = botonApretado;
     } else {
       pantalla.textContent += botonApretado;
